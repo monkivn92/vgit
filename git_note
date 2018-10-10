@@ -1,0 +1,27 @@
+--- github.com/github/gitignore ===> template gitignore
+
+--- error: The following untracked working tree files would be overwritten by merge:
+	learning_redux/Ch02/02_01/src/store/reducers.js
+	Please move or remove them before you can merge.
+	Aborting
+
+How do I force “git pull” to overwrite local files?
+
+I think this is the right way:
+
+git fetch --all
+
+Then, you have two options:
+
+git reset --hard origin/master
+
+OR If you are on some other branch:
+
+git reset --hard origin/<branch_name>
+
+
+--- git log --untill=2018-06-30
+
+--- git log --since=2018-06-25
+
+--- git log --grep="add css"
